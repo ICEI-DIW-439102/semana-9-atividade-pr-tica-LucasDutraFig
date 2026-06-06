@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Ecommerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <header>
+    <div class="header-inner">
+      <span class="logo">◈ NEXMART</span>
+      <p class="tagline">Catálogo Digital</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input id="search" type="text" placeholder="Buscar produto..." autocomplete="off" />
+      <select id="category">
+        <option value="Todas">Todas as categorias</option>
+      </select>
+      <button id="btnRender">↺ Renderizar</button>
+    </section>
+
+    <div id="product-list"></div>
     
+    <div id="product-details"></div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
